@@ -21,3 +21,17 @@
   - 해결법 2 : 모듈 열리는 곳에 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"; 삽입
 
 - 해결법 2와 헤더에 user-agent 넣어주는 것으로 공지사항 html 불러오기 성공
+
+- html에서 클래스로 데이터 빼와서 제목이랑 글 번호, 주소 빼오기 도전!
+- 처음엔 node-html-parser를 썻는데. cheerio가 더 난듯
+
+- 데이터 가져오기
+
+  - cheerio를 통해 제이쿼리 용법을 사용 가능하게함
+  - const $ = cheerio.load(body)로 $선언하고 이후 제이쿼리처럼 $ 가지고 사용하면 됨
+  - 이번 경우엔 .each함수로 배열을 처리하고 text()로 innerHTML을 가져옴
+  - 그 다음 공백 문자가 너무 많아. trim()으로 공백을 제거.
+  - 요소의 attribute는 .attr("~")로 해결
+  - 링크는 href 앞에 아주대 공지사항 도메인 주소를 넣어 해결
+
+- 디비설계, erd, 요구사항 정리, 기획 이런부분을 해야할듯 이제
