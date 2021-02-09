@@ -35,3 +35,43 @@
   - 링크는 href 앞에 아주대 공지사항 도메인 주소를 넣어 해결
 
 - 디비설계, erd, 요구사항 정리, 기획 이런부분을 해야할듯 이제
+
+## 21년 1월 26일
+
+- 크롤링 구현 완료
+- 웹페이지에 p태그로 띄우며 체크
+- data라는 객체에 배열로 저장
+- 나중에 카톡 메시지로 배포할땐 shortend link로 주는게 좋겠당
+- 자동 크롤링은 크론탭을 활용해서 해결하는 쪽으로 생각해보자
+- 메시지 쏘는건 event api가 있넹 유료긴한데 뭐...
+
+## 21년 2월 9일
+
+- 오픈빌더 승인 완료.
+- 서버구축 시작.
+- ec2로 서버 만들고 퍼티로 우분투 키고 mysql이랑 노드 설치
+
+### mysql 설치
+
+- https://luji.tistory.com/7?category=734037
+- 로컬에 agong 디비 만들고 그 디비에 접근 할 수 있는 agongMaster 라는 유저 생성 후, 권한 줌
+
+### node 설치
+
+- https://soojae.tistory.com/25
+
+### 노드 업데이트
+
+- https://velog.io/@re_brother/TIL-Node.js-Version-Update-for-Ubuntu-May-13-2020
+- nvm 사용법
+- https://calvinjmkim.tistory.com/22
+
+### sql, 워크벤치 연결
+
+- https://devkingdom.tistory.com/84
+- 쓰읍 왜 외부 연결이 안되지..
+- 차선책으로 rds 사용?
+
+### 1차 테스트 배포
+
+- 요구사항 : 투두 수정이 가능하게
